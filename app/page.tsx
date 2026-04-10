@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -116,7 +117,7 @@ export default function NetworkAnalyzerPage() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl flex items-center gap-3 text-white font-normal font-mono">
-              <Activity className="w-8 h-8 text-foreground" strokeWidth={1} />
+              <Image src="/logo.png" alt="Network Analyzer Logo" width={40} height={40} className="rounded-lg object-contain" />
               Network Traffic Analyzer
             </h1>
             <p className="text-slate-400 mt-1">Real-time packet monitoring and analysis</p>
